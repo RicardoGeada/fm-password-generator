@@ -1,1 +1,38 @@
 /* You can add global styles to this file, and also import other style files */
+:root {
+    // colors
+    --color-white: #FFFFFF;
+    --color-black: #000000;
+    --color-grey-950: #08070B;
+    --color-grey-900: #14131B;
+    --color-grey-850: #18171F;
+    --color-grey-800: #24232C;
+    --color-grey-700: #54535B;
+    --color-grey-600: #817D92;
+    --color-grey-200: #E6E5EA;
+    --color-green-200: #A4FFAF;
+    --color-yellow-300: #F8CD65;
+    --color-orange-400: #FB7C58;
+    --color-red-500: #F64A4A;
+
+    --color-gradient-1: linear-gradient(#14131B, #08070B);
+
+    // spacing
+    --spacing-100: 8px;
+    --spacing-200: 16px;
+    --spacing-300: 24px;
+    --spacing-400: 2px;
+    --spacing-700: 56px;
+    --spacing-1000: 80px;
+    --spacing-1300: 104px;
+    --spacing-1600: 128px;
+    --spacing-2000: 160px;
+    --spacing-2200: 176px;
+    --spacing-2300: 184px;
+}
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
