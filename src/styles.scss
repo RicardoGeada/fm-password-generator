@@ -1,4 +1,6 @@
 /* You can add global styles to this file, and also import other style files */
+@use './fonts.scss';
+
 :root {
     // colors
     --color-white: #FFFFFF;
@@ -35,4 +37,5 @@
     box-sizing: border-box;
     padding: 0;
     margin: 0;
+    font-family: 'JetBrains Mono';
 }
