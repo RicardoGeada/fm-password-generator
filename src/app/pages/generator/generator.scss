@@ -1,0 +1,15 @@
+@use "./../../../fonts.scss";
+
+main {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: var(--spacing-200);
+    padding: var(--spacing-200);
+}
+
+h1 {
+    color: var(--color-grey-600);
+    @include fonts.apply-text-preset("4");
+}

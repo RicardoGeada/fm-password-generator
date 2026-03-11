@@ -34,4 +34,14 @@ $text-presets: (
         line-height: 20px,
         letter-spacing: 0px,
     ),
-)
+);
+
+@mixin apply-text-preset($name) {
+    $preset: map.get($text-presets, $name);
+    @if $preset {
+        font-size: map.get($preset, size);
+        font-weight: map.get($preset, weight);
+        line-height: map.get($preset, line-height);
+        letter-spacing: map.get($preset, letter-spacing);
+    }
+}
