@@ -1,9 +1,10 @@
 import { Component } from '@angular/core';
 import { FormsModule } from '@angular/forms';
+import { PasswordStrength } from './password-strength/password-strength';
 
 @Component({
   selector: 'app-password-settings',
-  imports: [FormsModule],
+  imports: [FormsModule, PasswordStrength],
   templateUrl: './password-settings.html',
   styleUrl: './password-settings.scss',
 })
