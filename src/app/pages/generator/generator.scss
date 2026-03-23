@@ -14,3 +14,9 @@ h1 {
     color: var(--color-grey-600);
     @include fonts.apply-text-preset("4");
 }
+
+.content {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-200);
+}
