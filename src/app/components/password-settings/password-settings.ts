@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { PasswordStrength } from './password-strength/password-strength';
+import { PasswordService } from '../../services/passwordservice';
 
 @Component({
   selector: 'app-password-settings',
@@ -10,11 +11,19 @@ import { PasswordStrength } from './password-strength/password-strength';
 })
 export class PasswordSettings {
 
-  characterLength: number = 0;
-  maxLength: number = 20;
+  constructor(public ps: PasswordService) {}
 
   get sliderPercentage(): string {
-    return (this.characterLength / this.maxLength) * 100 + '%';
+    return (this.ps.length() / this.ps.maxLength) * 100 + '%';
   }
 
+  onSliderChange(event: Event) {
+    const value = +(event.target as HTMLInputElement).value;
+    this.ps.length.set(value);
+  }
+
+  onCheckboxChange(event: Event, signal: { set: (value: boolean) => void}) {
+    const checked = (event.target as HTMLInputElement).checked;
+    signal.set(checked);
+  }
 }
