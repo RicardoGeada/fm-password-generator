@@ -1,5 +1,6 @@
 import { Component, Input } from '@angular/core';
 import { NgClass } from '@angular/common';
+import { PasswordStrengthType } from '../../../types/password.type';
 
 @Component({
   selector: 'app-password-strength',
@@ -8,7 +9,7 @@ import { NgClass } from '@angular/common';
   styleUrl: './password-strength.scss',
 })
 export class PasswordStrength {
-  @Input() value: '' | 'too-weak' | 'weak' | 'medium' | 'strong' = '';
+  @Input() value: PasswordStrengthType = '';
 
   get strengthText(): string {
     return this.value == 'too-weak' ? "TOO WEAK!" : this.value;

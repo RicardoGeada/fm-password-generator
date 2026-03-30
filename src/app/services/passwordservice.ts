@@ -1,4 +1,5 @@
 import { Injectable, signal } from '@angular/core';
+import { PasswordStrengthType } from '../types/password.type';
 
 @Injectable({
   providedIn: 'root',
@@ -14,4 +15,5 @@ export class PasswordService {
   symbols = signal(false);
 
   password = signal('');
+  passwordStrength = signal<PasswordStrengthType>('');
 }
