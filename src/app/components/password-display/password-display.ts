@@ -1,4 +1,5 @@
-import { Component, signal } from '@angular/core';
+import { Component } from '@angular/core';
+import { PasswordService } from '../../services/passwordservice';
 
 @Component({
   selector: 'app-password-display',
@@ -8,6 +9,6 @@ import { Component, signal } from '@angular/core';
 })
 export class PasswordDisplay {
 
-  password = signal('');
+  constructor(public ps: PasswordService) {}
 
 }
