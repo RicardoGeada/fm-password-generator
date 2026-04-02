@@ -20,10 +20,12 @@ export class PasswordSettings {
   onSliderChange(event: Event) {
     const value = +(event.target as HTMLInputElement).value;
     this.ps.length.set(value);
+    this.ps.resetPassword();
   }
 
   onCheckboxChange(event: Event, signal: { set: (value: boolean) => void}) {
     const checked = (event.target as HTMLInputElement).checked;
     signal.set(checked);
+    this.ps.resetPassword();
   }
 }
