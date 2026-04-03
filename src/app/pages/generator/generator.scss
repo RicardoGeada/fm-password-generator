@@ -20,6 +20,7 @@ h1 {
     }
 
     .content {
+        max-width: 540px;
         gap: var(--spacing-300);
     }
 }

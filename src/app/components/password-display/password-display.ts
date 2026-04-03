@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, signal } from '@angular/core';
 import { PasswordService } from '../../services/passwordservice';
 
 @Component({
@@ -8,7 +8,25 @@ import { PasswordService } from '../../services/passwordservice';
   styleUrl: './password-display.scss',
 })
 export class PasswordDisplay {
+  copied = signal(false);
 
   constructor(public ps: PasswordService) {}
 
+
+  /**
+   * Copy password to clipboard
+   * - set copied state for UI
+   * @returns void
+   */
+  copyPassword() {
+    const password = this.ps.password();
+    if (!password) return;
+    navigator.clipboard.writeText(password).then(() => {
+      this.copied.set(true);
+
+      setTimeout(() => {
+        this.copied.set(false);
+      }, 1500);
+    });
+  }
 }
