@@ -10,6 +10,7 @@ This is a solution to the [Password generator app challenge on Frontend Mentor](
   - [Links](#links)
 - [My process](#my-process)
   - [Built with](#built-with)
+  - [Useful resources](#useful-resources)
 - [Author](#author)
 
 
@@ -43,6 +44,10 @@ Users should be able to:
 - JavaScript / TypeScript
 - Mobile-first workflow
 - [Angular](https://angular.dev/) - Framework
+
+### Useful resources
+
+- [angular-cli-ghpages](https://github.com/angular-schule/angular-cli-ghpages) - This helped me deploy my angular app to Github Pages.
 
 ## Author
 
