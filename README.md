@@ -31,8 +31,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [github.com/RicardoGeada/fm-pw-generator/](https://github.com/RicardoGeada/fm-pw-generator/)
-- Live Site URL: [ricardogeada.github.io/fm-pw-generator/](https://ricardogeada.github.io/fm-pw-generator/)
+- Solution URL: [github.com/RicardoGeada/fm-password-generator/](https://github.com/RicardoGeada/fm-password-generator/)
+- Live Site URL: [ricardogeada.github.io/fm-password-generator/](https://ricardogeada.github.io/fm-password-generator/)
 
 ## My process
 
